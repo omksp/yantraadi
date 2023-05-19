@@ -1,0 +1,19 @@
+package com.omkarpawar.krishisarathi.Common.Localization;
+
+
+public class LanguageDTO {
+    private String languageCode, languageTitle;
+
+    public LanguageDTO(String languageCode, String languageTitle) {
+        this.languageCode = languageCode;
+        this.languageTitle = languageTitle;
+    }
+
+    public String getLanguageCode() {
+        return languageCode;
+    }
+
+    public String getLanguageTitle() {
+        return languageTitle;
+    }
+}
