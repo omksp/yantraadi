@@ -87,14 +87,14 @@ public class EquipmentGetInfoFromOwner extends AppCompatActivity {
 
             }
         });
-
     }
 
     private void storeEquipment() {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
 
         Equipment_info data = new Equipment_info(equipName.getText().toString(), companyName.getEditText().getText().toString(), Integer.toString(modelYear));
-
+        // what is the value of data copilot
+        //system.out.println(data);
         reference.child("Owner").child(uid).child("Equipment_Details").child(data.getEquipment_name()).setValue(data).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
